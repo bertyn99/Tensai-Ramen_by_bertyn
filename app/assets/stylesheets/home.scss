@@ -1,0 +1,113 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face{
+    font-family: "caligraphy-nippon";
+    src: asset_url("CFPinceau.ttf");
+}
+
+
+body{
+    margin:0;
+}
+header{
+ width: 100%;
+
+}
+.banner{
+    background-image: asset_url('logo_ramen.png');
+    height:210px;
+    background-repeat:no-repeat;
+    background-size:45% 100%;
+    margin-left:30%;
+    padding-top:0 
+   
+}
+
+nav.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+background-color: black;
+list-style-type: none;
+margin: 0;
+padding: 0;
+height: 75px;
+
+
+}
+
+a.navbar-item, .navrbar-brand{
+    color: blanchedalmond;
+    font-family: caligraphy-nippon;
+    text-decoration: none;
+    font-size: 25px
+}
+
+.bloc{
+    display: flex;
+    justify-content: center;
+    width:50%;
+    height: 600px
+
+}
+.tabs ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px;
+    background: linear-gradient(to right, rgba(0,255,0,0.5) 0%,rgba(255,255,255,0.7) 50%,rgba(255,0,0,0.7) 100%);
+    box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.7);
+    border-radius: 10px;
+  }
+
+  .tabs li {
+    cursor: pointer;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+    transition: all ease-in 0.15s;
+  }
+.bloc .tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bloc .tabs a{
+    background-color: blue;
+    color: rgb(66, 185, 62);
+    text-decoration: none;
+    padding: 0 10px;
+    margin:25px;
+    font-weight:normal;
+    border-radius: 5px 5px 0
+}
+
+.bloc .tabs a:hover, .bloc .tabs a:active{
+    background-color: black;
+    color: white
+}
+.pres, .menu, .team {
+    padding-top: 0px;
+    color: white;
+    transition: opacity ease-in 5.2s;
+    transition: padding-top cubic-bezier(0, 1.17, 0.4, 1.04) 0.8s;
+    position: absolute;
+    width: 80%;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.2);
+    height: 350px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.4);
+  }
+  
+
+  .p {
+    padding-left: 200px;
+    width:60%;
+    line-height: 200%;
+  }
